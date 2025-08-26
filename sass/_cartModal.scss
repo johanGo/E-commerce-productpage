@@ -1,0 +1,88 @@
+.cart-modal {
+    margin: auto;
+    width: 360px;
+    height: 256px;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    // right: 4%;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 14px 20px 5px rgba(133, 131, 131, 0.2862745098);
+    @media (width>1115px) {
+        right: 0;
+        // left: 0;
+        transform: translateX(30%);
+    }
+    // display: none;
+    .cart-modal-title {
+        font-size: 19px;
+        font-weight: 700;
+        border-bottom: 1px solid hsl(220, 14%, 75%);
+        padding: 22px 22px 30px;
+    }
+
+    .cart-modal-checkout-container {
+        margin: 23px 23px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .message-empty {
+            margin: 38px auto;
+            font-size: 18px;
+            color: hsl(219, 9%, 45%);
+            font-weight: 700;
+        }
+
+        .cart-modal-details-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .img-item-cart {
+                width: 55px;
+                border-radius: 5px;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 8px;
+                color: hsl(219, 9%, 45%);
+
+                .cart-modal-price {
+                    letter-spacing: 0.5px;
+
+                    span {
+                        color: hsl(0, 0%, 0%);
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .cart-modal-delete {
+                width: 15px;
+                cursor: pointer;
+            }
+        }
+
+        .button-check {
+            width: 312px;
+            height: 55px;
+            background-color: hsl(26, 100%, 55%);
+            border-radius: 10px;
+            border: none;
+            color: black;
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+
+.show-cart-modal {
+    display: none;
+}

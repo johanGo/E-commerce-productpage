@@ -1,0 +1,78 @@
+.modal-gallery-background {
+    display: none;
+    @media (width>1115px) {
+        background-color: hsla(0, 0%, 0%, 0.696);
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        // display: none;
+    }
+
+    .modal-gallery {
+        width: 30rem;
+        height: 30rem;
+        margin: 3rem auto;
+        // border: 2px solid white;
+
+        // display: none;
+        .modal-icon-close {
+            float: right;
+            // clear:both;
+            width: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .modal-gallery-image-container {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            background-size: cover;
+            background-image: url("../images/image-product-1.jpg");
+            margin-bottom: 25px;
+            clear: both;
+            position: relative;
+
+            .modal-previous-icon {
+                width: 60px;
+                height: 60px;
+                padding: 18px;
+                background-color: white;
+                border-radius: 50%;
+                position: absolute;
+                top: 45%;
+                left: -30px;
+                cursor: pointer;
+            }
+
+            .modal-next-icon {
+                width: 60px;
+                height: 60px;
+                padding: 18px;
+                background-color: white;
+                border-radius: 50%;
+                position: absolute;
+                top: 45%;
+                right: -30px;
+                cursor: pointer;
+            }
+        }
+
+        .modal-gallery-thumbnail {
+            display: flex;
+            justify-content: space-evenly;
+            clear: both;
+
+            img{
+                width: 90px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}

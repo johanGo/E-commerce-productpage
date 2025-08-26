@@ -1,0 +1,28 @@
+@use '_header';
+@use 'content';
+@use '_cartModal';
+@use '_modal-gallery-desktop';
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+
+    .main-container {
+        width: 100%;
+        min-width: 375px;
+        // height: 100vh;
+        // height: auto;
+        margin: 0px auto;
+        position: relative;
+        // background-color: green;
+        // border: 2px solid rgb(175, 175, 175);
+
+        @media (width > 1115px) {
+            // background-color: yellow;
+            width: 80%;
+        }
+    }
+}
